@@ -2,7 +2,7 @@
 import React from 'react';
 import { COMPANY_INFO } from '@/lib/constants';
 import Image from 'next/image';
-import { Button } from '../ui/button';
+import { Button } from '../UI/Button';
 
 interface HeroProps {
   onCTAClick?: () => void;
