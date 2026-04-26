@@ -18,7 +18,7 @@ export const About = (): React.JSX.Element => {
     <section id="about" className="relative py-20 md:py-32 px-4">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/mid-background.jpg"
+          src="/images/backgrounds/mid-background.jpg"
           alt="Fundo com textura de crochê"
           fill
           className="object-cover"

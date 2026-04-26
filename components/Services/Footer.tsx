@@ -38,11 +38,11 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({
           rel="noopener noreferrer"
           className="flex items-start gap-4 group cursor-pointer"
         >
-          <div className="p-3 bg-green-600/20 rounded-lg text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all">
+          <div className="p-3 bg-pink-500/20 rounded-lg text-pink-500 group-hover:bg-pink-500 group-hover:text-white transition-all">
             {icon}
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors">
+            <h3 className="font-semibold text-gray-900 group-hover:text-pink-500 transition-colors">
               {title}
             </h3>
             <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
@@ -64,7 +64,7 @@ export const Footer: React.FC<FooterProps> = ({
 }) => {
   const currentYear = new Date().getFullYear();
 
-  const whatsAppLink = generateWhatsAppLink(COMPANY_INFO.whatsapp, "Hi! I'm interested in getting a free estimate for your services.");
+  const whatsAppLink = generateWhatsAppLink(COMPANY_INFO.whatsapp, "Olá! Gostaria de fazer um pedido.");
 
   const socialLinks = [
     {
@@ -80,25 +80,21 @@ export const Footer: React.FC<FooterProps> = ({
   ];
 
   return (
-    <section id="footer" className="bg-gradient-to-b from-gray-900 to-black text-white">
-      {/* Contact Section */}
-      <div className="section-padding border-b border-gray-800">
-        <div className="container-custom">
-          {/* Header */}
+    <footer id="footer" className="bg-gradient-to-b from-gray-900 to-black text-white">
+      <div className="py-16 px-4 border-b border-gray-800">
+        <div className="container mx-auto max-w-7xl">
           <motion.div
-            className="text-center mb-16"
+            className="text-center mb-12"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Entre em Contato</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Have questions? We'd love to hear from you. Contact us today!
+              Ficou com alguma dúvida ou quer fazer um pedido? Fale com a gente!
             </p>
           </motion.div>
-
-          {/* Contact Info Grid */}
           <motion.div
             className="grid md:grid-cols-3 gap-8"
             variants={staggerContainer}
@@ -108,14 +104,14 @@ export const Footer: React.FC<FooterProps> = ({
           >
             <ContactInfo
               icon={<MapPin className="w-6 h-6" />}
-              title="Address"
+              title="Localização"
               content={COMPANY_INFO.address}
             />
             <ContactInfo
               icon={<Phone className="w-6 h-6" />}
-              title="Phone"
+              title="WhatsApp"
               content={COMPANY_INFO.phone}
-              link={`tel:${COMPANY_INFO.phone}`}
+              link={whatsAppLink}
             />
             <ContactInfo
               icon={<Mail className="w-6 h-6" />}
@@ -127,65 +123,28 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="py-8 border-t border-gray-800">
-        <div className="container-custom">
+      <div className="py-8 px-4">
+        <div className="container mx-auto max-w-7xl">
           <motion.div
-            className="grid md:grid-cols-4 gap-8 items-center"
+            className="grid md:grid-cols-3 gap-8 items-center"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {/* Logo/Name */}
             <motion.div variants={staggerItem}>
-              <h3 className="text-2xl font-bold gradient-text">{companyName}</h3>
+              <h3 className="text-2xl font-bold text-pink-400">{companyName}</h3>
               <p className="text-gray-400 text-sm mt-2">
-                Professional Painting & Carpentry Services
+                Peças artesanais de crochê feitas com amor
               </p>
             </motion.div>
 
-            {/* Our Team - Owner Names */}
-            <motion.div variants={staggerItem}>
-              <h4 className="font-semibold text-white mb-3">Our Team</h4>
-              <div className="space-y-2">
-                <div>
-                  <p className="text-gray-400">
-                    <span className="text-white font-medium">Wellington Freitas</span>
-                  </p>
-                  <p className="text-sm text-gray-500">Owner</p>
-                </div>
-                <div>
-                  <p className="text-gray-400">
-                    <span className="text-white font-medium">Derveli Freitas</span>
-                  </p>
-                  <p className="text-sm text-gray-500">Owner</p>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Quick Links */}
             <motion.div variants={staggerItem} className="text-center">
               <h4 className="font-semibold text-white mb-3">Links</h4>
               <div className="space-y-2">
-                <a
-                  href="#services"
-                  className="block text-gray-400 hover:text-white transition-colors"
-                >
-                  Services
-                </a>
-                <a
-                  href="#gallery"
-                  className="block text-gray-400 hover:text-white transition-colors"
-                >
-                  Gallery
-                </a>
-                <a
-                  href="#contact"
-                  className="block text-gray-400 hover:text-white transition-colors"
-                >
-                  Contact
-                </a>
+                <a href="#services" className="block text-gray-400 hover:text-white transition-colors">Nossas Peças</a>
+                <a href="#gallery" className="block text-gray-400 hover:text-white transition-colors">Galeria</a>
+                <a href="#contact" className="block text-gray-400 hover:text-white transition-colors">Fazer Pedido</a>
               </div>
             </motion.div>
 
@@ -197,7 +156,7 @@ export const Footer: React.FC<FooterProps> = ({
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-800 text-gray-300 rounded-lg hover:bg-green-600 hover:text-white transition-all"
+                  className="p-3 bg-gray-800 text-gray-300 rounded-lg hover:bg-pink-500 hover:text-white transition-all"
                   whileHover={{ scale: 1.1, rotate: 360 }}
                   whileTap={{ scale: 0.9 }}
                   title={social.label}
@@ -218,16 +177,13 @@ export const Footer: React.FC<FooterProps> = ({
           >
             <p className="flex items-center justify-center gap-2">
               © {currentYear} {companyName}. Built with{" "}
-              <Heart className="w-4 h-4 text-red-500 fill-red-500" /> by{" "}
-              <span className="font-semibold text-white">Your Team</span>
+              <Heart className="w-4 h-4 text-pink-500 fill-pink-500" /> por amor ao crochê.
             </p>
-            <p className="text-sm mt-2">
-              All rights reserved. | Privacy Policy | Terms of Service
-            </p>
+            <p className="text-sm mt-2">Entregamos para todo o Brasil 🇬🇧</p>
           </motion.div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
