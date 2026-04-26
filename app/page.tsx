@@ -8,6 +8,7 @@ import { ImageGallery } from '@/components/Gallery/ImageGallery';
 import { Testimonials } from '@/components/Services/Testimonials';
 import { ContactForm } from '@/components/ContactForm/BookingForm';
 import { WhatsAppButton } from '@/components/WhatsAppButton/FloatingButton';
+import { GoogleMapSection } from '@/components/Maps/GoogleMapSection';
 
 export default function Home() {
   const handleCTAClick = () => {
@@ -33,6 +34,9 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <Testimonials />
+
+      {/* Entrega para todo o Brasil */}
+      <GoogleMapSection />
 
       {/* Contact Form Section */}
       <ContactForm />

@@ -63,7 +63,7 @@ export const GoogleMapSection: React.FC = () => {
             </div>
 
             {/* Address Card */}
-            <div className="bg-white border-2 border-green-100 rounded-xl p-6">
+            <div className="bg-white border-2 border-pink-100 rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-pink-100 rounded-lg text-pink-500">
                   <MapPin className="w-6 h-6" />
@@ -72,7 +72,7 @@ export const GoogleMapSection: React.FC = () => {
                   <h4 className="font-semibold text-gray-900 mb-2">Endereço</h4>
                   <p className="text-gray-600">
                     Brasília, DF<br />
-                    Brasil 🇬🇧
+                    Brasil �🇷
                   </p>
                 </div>
               </div>
