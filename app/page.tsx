@@ -2,12 +2,12 @@
 
 import React from 'react';
 import Hero from '@/components/Hero/Hero';
-import About from '@/components/About/About';
-import Services from '@/components/Services/Services';
-import Gallery from '@/components/Gallery/ImageGallery';
-import Testimonials from '@/components/Testimonials/Testimonials';
-import ContactForm from '@/components/ContactForm/BookingForm';
-import WhatsAppButton from '@/components/WhatsAppButton/WhatsAppButton';
+import { About } from '@/components/About/About';
+import { ServicesGrid } from '@/components/Services/ServicesGrid';
+import { ImageGallery } from '@/components/Gallery/ImageGallery';
+import { Testimonials } from '@/components/Services/Testimonials';
+import { ContactForm } from '@/components/ContactForm/BookingForm';
+import { WhatsAppButton } from '@/components/WhatsAppButton/FloatingButton';
 
 export default function Home() {
   const handleCTAClick = () => {
@@ -26,10 +26,10 @@ export default function Home() {
       <About />
 
       {/* Services Section */}
-      <Services />
+      <ServicesGrid />
 
       {/* Gallery Section */}
-      <Gallery />
+      <ImageGallery />
 
       {/* Testimonials Section */}
       <Testimonials />

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { Heart, Feather, Palette } from 'lucide-react'
 import { COMPANY_INFO } from '@/lib/constants'
 
-export const About: React.FC = () => {
+export const About = (): React.JSX.Element => {
   const differentials = [
     { icon: Heart, text: 'Peças 100% artesanais, feitas com amor.' },
     { icon: Palette, text: 'Designs exclusivos e personalizados para você.' },
