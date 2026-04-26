@@ -1,5 +1,5 @@
 // Hero Components
-export { Hero } from "./Hero/Hero";
+export { default as Hero } from "./Hero/Hero";
 
 // Services Components
 export { ServiceCard, ServicesGrid } from "./Services/ServicesGrid";
