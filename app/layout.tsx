@@ -18,23 +18,23 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "DW Company | Professional Painting & Carpentry in West Hartford, CT",
+  title: "Ninartcrochê | Peças de Crochê Artesanais",
   description:
-    "Licensed painting and carpentry services in West Hartford, CT. 6 years of experience in interior/exterior painting, deck installation, floor installation, bathroom remodeling, and custom carpentry. Free estimates!",
+    "Peças de crochê feitas à mão com amor e carinho. Especializada em tapetes, roupas de praia, souplats, chaveiros e bolsas. Entregamos para todo o Brasil!",
   keywords:
-    "painting contractor west hartford, carpentry services ct, deck installation hartford, bathroom remodeling ct, floor installation west hartford, professional painter connecticut",
-  authors: [{ name: "DW Company" }],
+    "crochê artesanal, bolsas de crochê, tapetes crochê, roupas de praia crochê, souplats crochê, Brasília, peças artesanais",
+  authors: [{ name: "Ninartcrochê" }],
   openGraph: {
-    title: "DW Company | Professional Painting & Carpentry in West Hartford, CT",
+    title: "Ninartcrochê | Peças de Crochê Artesanais",
     description:
-      "Licensed painting and carpentry services in West Hartford, CT with 6 years of experience. Free estimates available!",
+      "Peças de crochê feitas à mão com amor. Tapetes, roupas de praia, souplats, chaveiros e bolsas. Entregamos para todo o Brasil!",
     type: "website",
-    locale: "en_US",
+    locale: "pt_BR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "DW Company | Professional Painting & Carpentry in West Hartford, CT",
-    description: "Professional painting and carpentry services with 6 years of experience",
+    title: "Ninartcrochê | Peças de Crochê Artesanais",
+    description: "Peças de crochê artesanais feitas à mão com amor. Entregamos para todo o Brasil!",
   },
   robots: {
     index: true,
@@ -55,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${montserrat.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />

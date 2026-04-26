@@ -41,8 +41,8 @@ export function ProductCarousel({ images, category }: ProductCarouselProps) {
               <Image
                 src={src}
                 alt={`${category} - Imagem ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 className="transform transition-transform duration-500 hover:scale-110"
               />
             </div>
