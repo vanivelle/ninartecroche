@@ -13,7 +13,7 @@ export { About } from "./About/About";
 export { ImageGallery } from "./Gallery/ImageGallery";
 
 // Contact Form Components
-export { BookingForm } from "./ContactForm/BookingForm";
+export { ContactForm } from "./ContactForm/BookingForm";
 
 // Maps Components
 export { GoogleMapSection } from "./Maps/GoogleMapSection";
