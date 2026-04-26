@@ -31,23 +31,7 @@ export default function Home() {
   return (
     <main className="w-full overflow-hidden">
       {/* Hero Section */}
-      <Hero
-        videoSrc="/videos/chao/video1.mp4"
-        logo="/images/logo/logo.png"
-        headline="Transform Your Space Into Your Dream Home"
-        subheadline="Professional Painting & Carpentry Services in West Hartford, CT"
-        ctaPrimary={{
-          text: "Get Free Estimate",
-          onClick: handleBookConsultation,
-        }}
-        ctaSecondary={{
-          text: "View Our Work",
-          onClick: handleViewWork,
-        }}
-      />
-
-      {/* Services Section */}
-      <ServicesGrid onServiceClick={handleServiceClick} />
+      <Hero />
 
       {/* About Section */}
       <About />
