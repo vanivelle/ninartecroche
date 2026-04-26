@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ onCTAClick }) => {
       <div className="relative z-20 flex flex-col items-center text-white px-4">
         <div className="w-40 h-40 md:w-56 md:h-56 mb-6">
           <Image
-            src={COMPANY_INFO.logo}
+            src="/images/logo/logo.png"
             alt={`${COMPANY_INFO.name} Logo`}
             width={224}
             height={224}
@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ onCTAClick }) => {
           {COMPANY_INFO.name}
         </h1>
         <p className="text-lg md:text-2xl max-w-2xl mb-8">
-          {COMPANY_INFO.headline}
+          {COMPANY_INFO.tagline}
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
