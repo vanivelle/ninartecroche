@@ -7,13 +7,13 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 export const GoogleMapSection: React.FC = () => {
   const googleMapsUrl =
-    "https://www.google.com/maps/place/310+Newington+Rd,+West+Hartford,+CT+06110";
+    "https://www.google.com/maps/place/Bras%C3%ADlia,+DF";
   const embedUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.6234567890123!2d-72.7456!3d41.7833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7a5e5e5e5e5e5%3A0x1234567890abcdef!2s310%20Newington%20Rd%2C%20West%20Hartford%2C%20CT%2006110!5e0!3m2!1sen!2sus!4v1234567890";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245456.77777!2d-48.2!3d-15.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d3fc47828df%3A0xfa7f8efbb01c0e8!2sBras%C3%ADlia%2C%20DF!5e0!3m2!1spt!2sbr!4v1234567890";
 
   return (
-    <section className="section-padding bg-gray-50">
-      <div className="container-custom">
+    <section className="py-20 px-4 bg-gray-50">
+      <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <motion.div
           className="text-center mb-12"
@@ -22,11 +22,11 @@ export const GoogleMapSection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
-            Find Us on Google Maps
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Onde Estamos
           </h2>
           <p className="text-xl text-gray-600">
-            Visit our location in West Hartford, CT
+            Baseados em Brasília, entregamos para todo o Brasil!
           </p>
         </motion.div>
 
@@ -55,25 +55,24 @@ export const GoogleMapSection: React.FC = () => {
           <motion.div variants={fadeInUp} className="space-y-6">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Our Location
+                Nossa Localização
               </h3>
               <p className="text-gray-600 mb-6">
-                Visit us at our main office in West Hartford. We serve the entire Connecticut area with professional painting and carpentry services.
+                Estamos em Brasília, DF, e enviamos nossas peças artesanais para todo o Brasil com muito carinho!
               </p>
             </div>
 
             {/* Address Card */}
             <div className="bg-white border-2 border-green-100 rounded-xl p-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-green-100 rounded-lg text-green-600">
+                <div className="p-3 bg-pink-100 rounded-lg text-pink-500">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Address</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">Endereço</h4>
                   <p className="text-gray-600">
-                    310 Newington Rd<br />
-                    West Hartford, CT 06110<br />
-                    United States
+                    Brasília, DF<br />
+                    Brasil 🇬🇧
                   </p>
                 </div>
               </div>
@@ -84,16 +83,16 @@ export const GoogleMapSection: React.FC = () => {
               href={googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-all shadow-lg hover:shadow-xl w-full justify-center"
+              className="inline-flex items-center gap-2 bg-pink-500 text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-pink-600 transition-all shadow-lg hover:shadow-xl w-full justify-center"
             >
               <MapPin className="w-5 h-5" />
-              Open in Google Maps
+              Ver no Google Maps
               <ExternalLink className="w-5 h-5" />
             </a>
 
             {/* Hours Notice */}
             <p className="text-sm text-gray-500 italic">
-              📍 Click the button above to see our location and directions on Google Maps
+              📍 Clique no botão acima para ver nossa localização no Google Maps
             </p>
           </motion.div>
         </motion.div>
