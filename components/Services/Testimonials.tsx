@@ -121,10 +121,10 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
-            Customer Testimonials
+            O Que Nossas Clientes Dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Hear what our satisfied clients have to say about our work
+            Veja o que nossas clientes têm a dizer sobre nossas peças
           </p>
         </motion.div>
 
