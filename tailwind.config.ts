@@ -14,8 +14,9 @@ const config: Config = {
         accent: '#10b981',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Montserrat', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-nunito)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-nunito)', 'system-ui', 'sans-serif'],
+        brand: ['var(--font-great-vibes)', 'cursive'],
       },
       animation: {
         'float': 'float 3s ease-in-out infinite',

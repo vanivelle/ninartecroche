@@ -133,7 +133,7 @@ export const Footer: React.FC<FooterProps> = ({
             viewport={{ once: true }}
           >
             <motion.div variants={staggerItem}>
-              <h3 className="text-2xl font-bold text-pink-400">{companyName}</h3>
+              <h3 className="text-3xl font-brand text-pink-400">{companyName}</h3>
               <p className="text-gray-400 text-sm mt-2">
                 Peças artesanais de crochê feitas com amor
               </p>

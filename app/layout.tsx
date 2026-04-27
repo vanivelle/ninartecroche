@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Nunito, Great_Vibes } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({
+const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
-  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-nunito",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const montserrat = Montserrat({
+const greatVibes = Great_Vibes({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-montserrat",
-  weight: ["600", "700", "800", "900"],
+  variable: "--font-great-vibes",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang="pt-BR" className={`${nunito.variable} ${greatVibes.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />

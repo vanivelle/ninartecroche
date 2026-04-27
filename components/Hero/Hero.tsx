@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ onCTAClick }) => {
             priority
           />
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
+        <h1 className="text-5xl md:text-7xl font-brand leading-tight mb-4">
           {COMPANY_INFO.name}
         </h1>
         <p className="text-lg md:text-2xl max-w-2xl mb-8">
