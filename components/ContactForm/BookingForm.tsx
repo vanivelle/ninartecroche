@@ -22,7 +22,16 @@ export const ContactForm = (): React.JSX.Element => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const phone = COMPANY_INFO.whatsapp.replace(/\D/g, '');
-    const text = `Olá! Meu nome é ${formData.name}. Gostaria de um orçamento para "${formData.service}". Mensagem: ${formData.message}. (Email: ${formData.email})`;
+    const text = [
+      '🧶 *Novo Pedido - Ninartcrochê*',
+      '',
+      `👤 *Nome:* ${formData.name}`,
+      `📧 *Email:* ${formData.email}`,
+      `🛍️ *Produto:* ${formData.service}`,
+      `💬 *Mensagem:* ${formData.message}`,
+      '',
+      '_Mensagem enviada pelo site ninartecroche.vercel.app_',
+    ].join('\n');
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank');
   };
