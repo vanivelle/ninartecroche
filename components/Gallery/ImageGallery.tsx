@@ -3,30 +3,31 @@
 import { ProductCarousel } from '../ProductCarousel'
 import { motion } from 'framer-motion'
 
-const images1 = [
+// Bolsas: bolsa1-3, bolsa6-7 (corretas) + bolsas que estavam em roupas-praia
+const imagesBolsas = [
   "/images/projects/croche/bolsas/bolsa1.jpg",
   "/images/projects/croche/bolsas/bolsa2.jpg",
   "/images/projects/croche/bolsas/bolsa3.jpg",
-  "/images/projects/croche/bolsas/bolsa4.jpg",
-  "/images/projects/croche/bolsas/bolsa5.jpg",
   "/images/projects/croche/bolsas/bolsa6.jpg",
   "/images/projects/croche/bolsas/bolsa7.jpg",
-];
-
-const images2 = [
   "/images/projects/croche/roupas-praia/roupa-praia1.jpg",
-  "/images/projects/croche/roupas-praia/roupa-praia2.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia3.jpg",
-  "/images/projects/croche/roupas-praia/roupa-praia4.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia5.jpg",
-  "/images/projects/croche/roupas-praia/roupa-praia6.jpg",
-  "/images/projects/croche/roupas-praia/roupa-praia7.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia8.jpg",
-  "/images/projects/croche/roupas-praia/roupa-praia9.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia10.jpg",
 ];
 
-const images3 = [
+// Roupas de Praia: corretas (roupa7, roupa9) + biquinis que estavam em souplats e acessórios
+const imagesRoupasPraia = [
+  "/images/projects/croche/roupas-praia/roupa-praia7.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia9.jpg",
+  "/images/projects/croche/sousplats/sousplat10.jpg",
+  "/images/projects/croche/sousplats/sousplat11.jpg",
+  "/images/projects/croche/acessorios/acessorio3.jpg",
+];
+
+// Souplats: sousplat1-9 (corretos, removidos sousplat10 e 11 que eram biquinis)
+const imagesSouplats = [
   "/images/projects/croche/sousplats/sousplat1.jpg",
   "/images/projects/croche/sousplats/sousplat2.jpg",
   "/images/projects/croche/sousplats/sousplat3.jpg",
@@ -36,16 +37,24 @@ const images3 = [
   "/images/projects/croche/sousplats/sousplat7.jpg",
   "/images/projects/croche/sousplats/sousplat8.jpg",
   "/images/projects/croche/sousplats/sousplat9.jpg",
-  "/images/projects/croche/sousplats/sousplat10.jpg",
-  "/images/projects/croche/sousplats/sousplat11.jpg",
 ];
 
-const images4 = [
+// Tapetes: tapete1 + tapetes que estavam misturados em outras categorias
+const imagesTapetes = [
+  "/images/projects/croche/tapetes/tapete1.jpg",
+  "/images/projects/croche/bolsas/bolsa5.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia2.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia4.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia6.jpg",
+  "/images/projects/croche/acessorios/acessorio4.jpg",
+];
+
+// Acessórios: acessorio1, 2, 5 (corretos) + chaveiro bolsa4
+const imagesAcessorios = [
   "/images/projects/croche/acessorios/acessorio1.jpg",
   "/images/projects/croche/acessorios/acessorio2.jpg",
-  "/images/projects/croche/acessorios/acessorio3.jpg",
-  "/images/projects/croche/acessorios/acessorio4.jpg",
   "/images/projects/croche/acessorios/acessorio5.jpg",
+  "/images/projects/croche/bolsas/bolsa4.jpg",
 ];
 
 export function ImageGallery() {
@@ -68,10 +77,11 @@ export function ImageGallery() {
         </motion.div>
 
         <div className="space-y-16">
-          <ProductCarousel images={images1} category="Bolsas" />
-          <ProductCarousel images={images2} category="Roupas de Praia" />
-          <ProductCarousel images={images3} category="Souplats" />
-          <ProductCarousel images={images4} category="Acessórios" />
+          <ProductCarousel images={imagesBolsas} category="Bolsas" />
+          <ProductCarousel images={imagesRoupasPraia} category="Roupas de Praia" />
+          <ProductCarousel images={imagesSouplats} category="Souplats" />
+          <ProductCarousel images={imagesTapetes} category="Tapetes" />
+          <ProductCarousel images={imagesAcessorios} category="Acessórios" />
         </div>
       </div>
     </section>
