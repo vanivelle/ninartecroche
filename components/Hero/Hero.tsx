@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ onCTAClick }) => {
             alt={`${COMPANY_INFO.name} Logo`}
             width={224}
             height={224}
-            className="object-contain"
+            className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
             priority
           />
         </div>

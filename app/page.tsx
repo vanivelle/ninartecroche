@@ -33,7 +33,7 @@ export default function Home() {
       <ImageGallery />
 
       {/* Testimonials Section */}
-      <Testimonials />
+      <Testimonials autoPlayInterval={8000} />
 
       {/* Entrega para todo o Brasil */}
       <GoogleMapSection />

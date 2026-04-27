@@ -14,7 +14,7 @@ interface WhatsAppButtonProps {
 }
 
 export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
-  message = "Hi! I'm interested in booking a consultation. Can you help me?",
+  message = "Olá! Vim pelo site e gostaria de fazer um pedido. Pode me ajudar?",
   position = "bottom-right",
   customPhoneNumber = COMPANY_INFO.whatsapp,
 }) => {
