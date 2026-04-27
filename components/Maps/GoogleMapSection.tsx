@@ -72,7 +72,7 @@ export const GoogleMapSection: React.FC = () => {
                   <h4 className="font-semibold text-gray-900 mb-2">Endereço</h4>
                   <p className="text-gray-600">
                     Brasília, DF<br />
-                    Brasil �🇷
+                    Brasil 🇧🇷
                   </p>
                 </div>
               </div>

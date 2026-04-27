@@ -68,9 +68,6 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 
-  // Turbopack configuration
-  turbopack: {},
-
   // Experimental features
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
