@@ -59,9 +59,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />
-        <link rel="canonical" href="https://dwcompany.com" />
+        <link rel="canonical" href="https://ninartecroche.vercel.app" />
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className="antialiased">
         {children}
         
         {/* Google Analytics */}
