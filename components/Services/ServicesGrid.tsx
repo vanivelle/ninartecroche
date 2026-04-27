@@ -45,19 +45,19 @@ interface ServicesGridProps {
 
 export const ServicesGrid: React.FC<ServicesGridProps> = () => {
   const services = [
-    { id: "tapetes", icon: <Home className="w-8 h-8" />, title: "Tapetes Personalizados", description: "Tapetes de croche feitos sob medida para qualquer ambiente da sua casa.", features: ["Design exclusivo no seu estilo", "Diversas cores e tamanhos", "Material de alta qualidade"] },
-    { id: "roupas-praia", icon: <Anchor className="w-8 h-8" />, title: "Roupas de Praia", description: "Biquinis, saidas de praia e tops em croche para arrasar no verao.", features: ["Pecas unicas feitas a mao", "Confotaveis e elegantes", "Perfeitas para o verao"] },
-    { id: "souplats", icon: <Home className="w-8 h-8" />, title: "Souplats (Porta-Pratos)", description: "Decore sua mesa com souplats artesanais cheios de charme e personalidade.", features: ["Mesa posta com muito estilo", "Varias opcoes de cores", "Acabamento impecavel"] },
-    { id: "bolsas", icon: <ShoppingBag className="w-8 h-8" />, title: "Bolsas de Croche", description: "Bolsas estilosas e versateis para todas as ocasioes do dia a dia.", features: ["Design moderno e atual", "Resistentes e praticas", "Cada peca e unica"] },
-    { id: "acessorios", icon: <Shirt className="w-8 h-8" />, title: "Acessorios", description: "Pecas delicadas como tops, saias e outros acessorios de croche.", features: ["Feitos com muito carinho", "Leves e delicados", "Otimas opcoes de presente"] },
-    { id: "chaveiros", icon: <Key className="w-8 h-8" />, title: "Chaveiros e Lembrancas", description: "Chaveiros e lembrancinhas artesanais, otimos para presentear.", features: ["Criativos e delicados", "Perfeitos para presente", "Diversos modelos disponiveis"] },
+    { id: "tapetes", icon: <Home className="w-8 h-8" />, title: "Tapetes Personalizados", description: "Tapetes de crochê feitos sob medida para qualquer ambiente da sua casa.", features: ["Design exclusivo no seu estilo", "Diversas cores e tamanhos", "Material de alta qualidade"] },
+    { id: "roupas-praia", icon: <Anchor className="w-8 h-8" />, title: "Roupas de Praia", description: "Biquínis, saídas de praia e tops em crochê para arrasar no verão.", features: ["Peças únicas feitas à mão", "Confortáveis e elegantes", "Perfeitas para o verão"] },
+    { id: "souplats", icon: <Home className="w-8 h-8" />, title: "Souplats (Porta-Pratos)", description: "Decore sua mesa com souplats artesanais cheios de charme e personalidade.", features: ["Mesa posta com muito estilo", "Várias opções de cores", "Acabamento impecável"] },
+    { id: "bolsas", icon: <ShoppingBag className="w-8 h-8" />, title: "Bolsas de Crochê", description: "Bolsas estilosas e versáteis para todas as ocasiões do dia a dia.", features: ["Design moderno e atual", "Resistentes e práticas", "Cada peça é única"] },
+    { id: "acessorios", icon: <Shirt className="w-8 h-8" />, title: "Acessórios", description: "Peças delicadas como tops, saias e outros acessórios de crochê.", features: ["Feitos com muito carinho", "Leves e delicados", "Ótimas opções de presente"] },
+    { id: "chaveiros", icon: <Key className="w-8 h-8" />, title: "Chaveiros e Lembranças", description: "Chaveiros e lembrancinhas artesanais, ótimos para presentear.", features: ["Criativos e delicados", "Perfeitos para presente", "Diversos modelos disponíveis"] },
   ];
 
   return (
     <section id="services" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto max-w-7xl">
         <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Nossas Pecas</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Nossas Peças</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">Tudo feito a mao com amor. Entregamos para todo o Brasil!</p>
         </motion.div>
         <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
