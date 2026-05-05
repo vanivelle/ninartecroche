@@ -49,9 +49,8 @@ const imagesTapetes = [
   "/images/projects/croche/acessorios/acessorio4.jpg",
 ];
 
-// Acessórios: acessorio1, 2, 5 (corretos) + chaveiro bolsa4
+// Acessórios: acessorio2, 5 (corretos) + chaveiro bolsa4
 const imagesAcessorios = [
-  "/images/projects/croche/acessorios/acessorio1.jpg",
   "/images/projects/croche/acessorios/acessorio2.jpg",
   "/images/projects/croche/acessorios/acessorio5.jpg",
   "/images/projects/croche/bolsas/bolsa4.jpg",
