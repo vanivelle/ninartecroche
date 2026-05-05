@@ -17,16 +17,18 @@ const imagesBolsas = [
   "/images/projects/croche/roupas-praia/roupa-praia10.jpg",
 ];
 
-// Roupas de Praia: corretas (roupa7, roupa9) + biquinis que estavam em souplats e acessórios
+// Roupas de Praia: corretas (roupa7, roupa9) + biquinis que estavam em souplats e acessórios + novas
 const imagesRoupasPraia = [
   "/images/projects/croche/roupas-praia/roupa-praia7.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia9.jpg",
   "/images/projects/croche/sousplats/sousplat10.jpg",
   "/images/projects/croche/sousplats/sousplat11.jpg",
   "/images/projects/croche/acessorios/acessorio3.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia11.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia12.jpg",
 ];
 
-// Souplats: sousplat1-9 (corretos, removidos sousplat10 e 11 que eram biquinis)
+// Souplats: sousplat1-9 (corretos, removidos sousplat10 e 11 que eram biquinis) + novo sousplat12
 const imagesSouplats = [
   "/images/projects/croche/sousplats/sousplat1.jpg",
   "/images/projects/croche/sousplats/sousplat2.jpg",
@@ -37,6 +39,7 @@ const imagesSouplats = [
   "/images/projects/croche/sousplats/sousplat7.jpg",
   "/images/projects/croche/sousplats/sousplat8.jpg",
   "/images/projects/croche/sousplats/sousplat9.jpg",
+  "/images/projects/croche/sousplats/sousplat12.jpg",
 ];
 
 // Tapetes: tapete1 + tapetes que estavam misturados em outras categorias
@@ -49,10 +52,11 @@ const imagesTapetes = [
   "/images/projects/croche/acessorios/acessorio4.jpg",
 ];
 
-// Acessórios: acessorio2, 5 (corretos) + chaveiro bolsa4
+// Acessórios: acessorio2, 5, 6 (corretos) + chaveiro bolsa4
 const imagesAcessorios = [
   "/images/projects/croche/acessorios/acessorio2.jpg",
   "/images/projects/croche/acessorios/acessorio5.jpg",
+  "/images/projects/croche/acessorios/acessorio6.jpg",
   "/images/projects/croche/bolsas/bolsa4.jpg",
 ];
 
