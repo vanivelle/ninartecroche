@@ -10,6 +10,7 @@ const imagesBolsas = [
   "/images/projects/croche/bolsas/bolsa3.jpg",
   "/images/projects/croche/bolsas/bolsa6.jpg",
   "/images/projects/croche/bolsas/bolsa7.jpg",
+  "/images/projects/croche/bolsas/bolsa8.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia1.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia3.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia5.jpg",
@@ -26,6 +27,16 @@ const imagesRoupasPraia = [
   "/images/projects/croche/acessorios/acessorio3.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia11.jpg",
   "/images/projects/croche/roupas-praia/roupa-praia12.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia13.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia14.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia15.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia16.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia17.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia18.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia19.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia20.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia21.jpg",
+  "/images/projects/croche/roupas-praia/roupa-praia22.jpg",
 ];
 
 // Souplats: sousplat1-9 (corretos, removidos sousplat10 e 11 que eram biquinis) + novo sousplat12
@@ -52,11 +63,14 @@ const imagesTapetes = [
   "/images/projects/croche/acessorios/acessorio4.jpg",
 ];
 
-// Acessórios: acessorio2, 5, 6 (corretos) + chaveiro bolsa4
+// Acessórios: acessorio2, 5, 6 (corretos) + chaveiro bolsa4 + novos
 const imagesAcessorios = [
   "/images/projects/croche/acessorios/acessorio2.jpg",
   "/images/projects/croche/acessorios/acessorio5.jpg",
   "/images/projects/croche/acessorios/acessorio6.jpg",
+  "/images/projects/croche/acessorios/acessorio7.jpg",
+  "/images/projects/croche/acessorios/acessorio8.jpg",
+  "/images/projects/croche/acessorios/acessorio9.jpg",
   "/images/projects/croche/bolsas/bolsa4.jpg",
 ];
 
